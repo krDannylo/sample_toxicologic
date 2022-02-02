@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sample Toxicologic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- form1 -->
+
+        
+        <form action="" id="form1">
+            <h2>  Amostra Toxicológica </h2>
+            <input type="text" placeholder="Código Amostra" required>
+
+            <div class="btn">
+                <button type="button" id="next">
+                    Próximo
+                </button>
+            </div>
+        </form>
+
+        <!-- form2 -->
+
+        <form action="" id="form2">
+            <h2>  Amostra Toxicológica </h2>
+            <input type="text" placeholder="Cocaína" required>
+            <input type="text" placeholder="Anfetamina" required>
+            <input type="text" placeholder="Metanfetamina" required>
+
+
+            <div class="btn">
+
+                <button type="button" id="back1">
+                    Voltar
+                </button>
+
+                <button type="button" id="next2">
+                    Próximo
+                </button>
+            </div>
+        </form>
+         <!-- form3 -->
+
+        <form action="" id="form3">
+            <h2>  Amostra Toxicológica </h2>
+            <input type="text" placeholder="MDA" required>
+            <input type="text" placeholder="MDMA" required>
+            <input type="text" placeholder="THC" required>
+
+
+            <div class="btn">
+
+                <button type="button" id="back2">
+                    Voltar
+                </button>
+
+                <button type="button" id="next3">
+                    Próximo
+                </button>
+            </div>
+        </form>
+
+        <!-- form4 -->
+
+        <form action="" id="form4">
+            <h2>  Amostra Toxicológica </h2>
+            <input type="text" placeholder="Morfina" required>
+            <input type="text" placeholder="Codeína" required>
+            <input type="text" placeholder="Heroína" required>
+
+            <div class="btn">
+                <button type="button" id="back3">
+                    Voltar
+                </button>
+
+                <button type="button" id="next4">
+                    Próximo
+                </button>
+            </div>
+        </form>
+<!-- form5-->
+        <form action="" id="form5">
+            <h2>  Amostra Toxicológica </h2>
+            <input type="text" placeholder="Benzoilecgonina" required>
+            <input type="text" placeholder="Cocaetileno" required>
+            <input type="text" placeholder="Norcocaína" required>
+
+            <div class="btn">
+                <button type="button" id="back4">
+                    Voltar
+                </button>
+
+                <button type="button" >
+                    Resultado
+                </button>
+            </div>
+        </form>
+
+
+
+        <div class="step_row">
+            <div id="progress_bar"></div>
+
+            <div class="step_col">
+                <small>Passo 1</small>
+            </div>
+
+            <div class="step_col">
+                <small>Passo 2</small>
+            </div>
+
+            <div class="step_col">
+                <small>Passo 3</small>
+            </div>
+            
+            <div class="step_col">
+                <small>Passo 4</small>
+            </div>
+
+            <div class="step_col">
+                <small>Passo 5</small>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        var form1 = document.getElementById("form1");
+        var form2 = document.getElementById("form2");
+        var form3 = document.getElementById("form3");
+        var form4 = document.getElementById("form4");
+        var form5 = document.getElementById("form5");
+
+        
+        var next2 = document.getElementById("next2");
+        var back1 = document.getElementById("back1");
+        var back2 = document.getElementById("back2");
+        var next3 = document.getElementById("next3");
+        var back3 = document.getElementById("back3");
+        var next4 = document.getElementById("next4");
+        var back4 = document.getElementById("back4");
+        
+
+        var progress_bar = document.getElementById("progress_bar");
+
+        next.onclick = function()
+        {
+            form1.style.left = "-450px";
+            form2.style.left = "40px";
+            progress_bar.style.width="140px";
+        }
+
+        back1.onclick = function()
+        {
+            form1.style.left = "40px";
+            form2.style.left = "450px";
+            progress_bar.style.width="60px";
+        }
+
+        next2.onclick = function()
+        {
+            form2.style.left = "-450px";
+            form3.style.left = "40px";
+            progress_bar.style.width="220px";
+        }
+        
+
+        back2.onclick = function()
+        {
+            form2.style.left = "40px";
+            form3.style.left = "450px";
+            progress_bar.style.width="150px";
+        }
+        next3.onclick = function()
+        {
+            form3.style.left = "-450px";
+            form4.style.left = "40px";
+            progress_bar.style.width="280px";
+        }
+
+        back3.onclick = function()
+        {
+            form3.style.left = "40px";
+            form4.style.left = "450px";
+            progress_bar.style.width="210px";
+        }
+
+        next4.onclick = function()
+        {
+            form4.style.left = "-450px";
+            form5.style.left = "40px";
+            progress_bar.style.width="360px";
+        }
+
+        back4.onclick = function()
+        {
+            form4.style.left = "40px";
+            form5.style.left = "450px";
+            progress_bar.style.width="280px";
+        }
+      
+
+   
+       
+        
+    </script>
+
+
+</body>
+</html>
